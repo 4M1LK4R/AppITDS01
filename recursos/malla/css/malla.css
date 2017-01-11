@@ -1,0 +1,179 @@
+.semestre h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+.contenedor {
+  clear: both;
+  display: inline-block;
+  /*border: green 1px solid;*/
+  white-space: nowrap;
+  box-shadow: #444 3px 3px 30px;
+}
+.semestre {
+  display: inline-block;
+  max-width: 20%;
+  min-width: 8%;
+  margin-right: 0.1em;
+  vertical-align: top;
+}
+.materia {
+  height: 10%;
+  width: 70%;
+  border: solid #ccc 1px;
+  background: white;
+  margin: 0.5em;
+  padding: 1px;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  overflow: hidden;
+  white-space: normal;
+  cursor: pointer;
+}
+.materia header {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  font-size: 1em;
+}
+.materia:hover {
+  background: #0288d1;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: #222 2px 2px 5px;
+  border: solid #000 1px;
+  opacity: 0.9;
+  /*background:#ADE;*/
+}
+.materia header:after {
+  content: '';
+}
+.det-mat {
+  opacity: 0.5;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -ms-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  top: 7em;
+  position: relative;
+  font-size: 0.8em;
+  color: #444;
+  margin-top: 3px;
+}
+.det-mat p {
+  margin: 2px;
+}
+.materia:hover .det-mat {
+  opacity: 1;
+  top: 0px;
+}
+.materia section {
+  /* margin:0.8em;*/
+}
+.materia footer {
+  width: 100%;
+  border-top: 1px solid white;
+}
+/*Estilos de los departamentos*/
+.CB {
+  background: #FFFFFF;
+}
+.ST {
+  background: #FFFFFF;
+}
+.NFI {
+  background: #FFFFFF;
+}
+.BU {
+  background: #FFFFFF;
+}
+.OG {
+  background: #FFFFFF;
+}
+.BU {
+  background: #FFFFFF;
+}
+.COM {
+  background: #FFFFFF;
+}
+.PY {
+  background: #FFFFFF;
+}
+.PT {
+  background: #FFFFFF;
+}
+/*Estilos de los pre y correquisitos*/
+.correquisito {
+  background: #ffd54f;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: #222 2px 2px 5px;
+}
+.prerequisito {
+  background: #66bb6a;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: #222 2px 2px 5px;
+}
+.previo {
+  background: #e57373;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: #222 2px 2px 5px;
+}
+.selected {
+  background: #0288d1;
+}
+/*CSS de JS plumb*/
+/*Flechas por encima*/
+._jsPlumb_endpoint {
+  z-index: 200;
+}
+._jsPlumb_connector {
+  z-index: 201;
+}
+._jsPlumb_overlay {
+  z-index: 200;
+}
+/*Flechas por debajo*/
+/*._jsPlumb_endpoint{z-index:-1}
+._jsPlumb_connector{z-index:-1}
+._jsPlumb_overlay{z-index:-1}*/
+@media (max-width: 767px) {
+  .semestre {
+    /*max-width:15em;*/
+    border-right: solid white 2px;
+    margin-right: 0em;
+    padding: 0em;
+    /*float:left;*/
+  }
+  .materia {
+    height: 7em;
+    width: 8em;
+    margin: 0;
+    margin-bottom: 2px;
+    padding: 2px;
+    text-align: center;
+    /*.transition-duration(1s);*/
+    overflow: hidden;
+    /*z-index:3;*/
+  }
+}
